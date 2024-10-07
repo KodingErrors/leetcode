@@ -1,7 +1,7 @@
 from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        anagram_map = {}
+        anagram_map = defaultdict(list)
         result = []
 
         for s in strs:
